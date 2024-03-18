@@ -1,5 +1,5 @@
 resource "oci_core_subnet" "private_ap_south_1a" {
-  cidr_block         = var.cidr_block
+  cidr_block         = var.private_subnet_cidr_block
   vcn_id             = oci_core_virtual_network.main.id  # Use the OCI VCN ID where you want to create the subnet
   availability_domain = local.availability_domain_name # Specify the correct availability domain for ap-south-1a
   compartment_id = var.compartment_id

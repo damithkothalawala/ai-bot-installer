@@ -10,3 +10,6 @@ variable "cidr_block" {
 variable "compartment_id" {
   type = string
 }
+variable "private_subnet_cidr_block" {
+  type = string
+}
